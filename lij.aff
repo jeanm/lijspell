@@ -1,0 +1,77 @@
+SET UTF-8
+LANG lij
+TRY eaiontscrdmlugpvhfâæbòàçxqzéöîìñôêùëäykïwjèûEAIONTSCRDMLUGPVHFÂÆBÒÀÇXQZÉÖÎÌÑÔÊÙËÄYKÏWJÈÛ'
+
+MAP 6
+MAP aàâäAÀÂÄ
+MAP eeèéêëæEeÈÉÊËÆ
+MAP iìîïj(ii)(ji)IÌÎÏJ(II)(JI)
+MAP oòóôöOÒÓÔÖuùûüUÙÛÜ
+MAP cçszCÇSZ
+MAP ñn(nh)(nn)(nn-)ÑN(NH)(NN)(NN-)
+
+REP 40
+REP ae æ
+REP è æ
+REP e æ
+REP ç s
+REP s ç
+REP b bb
+REP bb b
+REP c cc
+REP cc c
+REP çç ç
+REP çç s
+REP d dd
+REP dd d
+REP f ff
+REP ff f
+REP g gg
+REP gg g
+REP gl gg
+REP l ll
+REP ll l
+REP m mm
+REP mm m
+REP nn- ñ
+REP n- ñ
+REP nh ñ
+REP nn ñ
+REP n m
+REP p pp
+REP pp p
+REP r rr
+REP rr r
+REP s ss
+REP ss s
+REP t tt
+REP tt t
+REP v vv
+REP vv v
+REP z zz
+REP zz z
+REP xx x
+
+FLAG long
+
+FORBIDDENWORD !!
+NEEDAFFIX --
+NOSUGGEST **
+
+# 1st conjugation, stressed prefix (formed from present ind. 1s)
+SFX aa Y 5
+SFX aa o i [^cgi]o  # present ind. 2s, base case: lavo
+SFX aa o hi [cg]o   # present ind. 2s, -co/-go case: pago
+SFX aa io i io      # present ind. 2s, -io case (non-syllabic -i-): mangio
+SFX aa o a o        # present ind. 3s
+SFX aa o an o       # present ind. 3p
+
+# 1st conjugation, unstressed prefix (formed from present ind. 1p)
+SFX AA Y 3
+SFX AA emmo æ [^cgh]emmo  # present ind. 2p, base case: lavemmo
+SFX AA emmo iæ [cg]emmo  # present ind. 2p, -cemmo/-gemmo case: mangemmo
+SFX AA hemmo æ hemmo      # present ind. 2p, -chemmo/-ghemmo case: paghemmo
+
+# Note: no need to explicitly inflect present ind. 1s and 1p,
+# as these are the base forms from which all others are obtained
+# via suffixation.
