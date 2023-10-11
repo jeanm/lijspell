@@ -1,6 +1,6 @@
 # Building a spellchecker for Ligurian verbs
 
-This repository contains a minimal spellcher for the present indicative tense of Ligurian verbs belonging to the first conjugation (infinitive ending in _-â_).
+This repository contains a minimal spellchecker for the present indicative tense of Ligurian verbs belonging to the first conjugation (infinitive ending in _-â_).
 
 ## First conjugation basics
 
